@@ -1,0 +1,60 @@
+/* mise en place des animations */ 
+
+.sect{
+    &__txt{
+        &--go{
+            animation: move 20s linear infinite;
+        }
+        &--inevert{
+            transform: translateX(-150vw);
+            animation: move2 40s linear infinite;
+        }
+    }
+    &__btn{
+        animation: btnBox 1s linear infinite;
+    }
+    .sect__img--2 {
+        animation: bonce 1s linear infinite;
+      }
+    &__btn:hover{
+        
+        .sect__img--2{
+            animation: bonce 0s linear infinite;
+          }
+    }
+}
+
+@keyframes move{
+     99%{ transform: translateX(-100%); }
+    100% { transform: translateX(100%);}
+}
+@keyframes move2{
+    99% { transform: translateX(2%); }
+    100% { transform: translateX(-5%);}
+}
+@keyframes bonce{
+    70%{
+        transform: rotate(-20deg);
+    }
+    90%{
+        transform: rotate(40deg);
+    }
+    100%{
+        transform: rotate(-20deg);
+    }
+}
+@keyframes btnBox {
+    60%{
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(255,0,0, 0.7);
+    }
+    90%{
+        transform: scale(1);
+        box-shadow: 0 0 0 30px rgba(255,0,0, 0);
+    }
+    100%{
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(255,0,0, 0);
+    }
+    
+}

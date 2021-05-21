@@ -1,0 +1,85 @@
+/* mise en place des fonts */ 
+
+/*@font-face {
+    font-family: "Neutro";
+    src: url("assets/font/Neutro.otf");
+  }*/
+
+.sect{
+    &__titre{
+        font-family: "Neutro", sans-sérif;
+        line-height: 100%;
+        color: #ffffff;
+        &--1{
+            font-size: 73px;
+            line-height: 90%;
+        }
+        &--1b{
+            font-size: 105px;
+            line-height: 90%;
+        }
+        &--2{
+            font-size: 66px;
+        }
+        &--red{
+            text-transform: uppercase;
+            color:#FF0000;
+        }
+        &--outline{
+            -webkit-text-stroke: 1px #FFFFFF;
+            color: #121212;
+        }
+    }
+    
+    &__txt{
+        font-family: 'Red Rose', cursive;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 190%;
+        color :rgba(255, 255, 255, 0.9);
+        width: 55ch;
+        &--small{
+            font-size: 9px;
+            color: rgba(255, 255, 255, 0.5);
+            width: 100%;
+            font-family: "Neutro", sans-sérif;
+            margin: 0;
+            
+        }
+        &--big{
+            font-size: 38px;
+            width: 25ch;
+        }
+    }
+    &__btn{
+        &--2{
+            font-size: 22px;
+            font-weight: 900;
+            font-family: 'Red Rose', cursive;
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    &__lien{
+        padding: 25px 35px;
+        font-size: 22px;
+        text-decoration: none;
+        font-family: 'Red Rose', cursive;
+        font-weight: 900;
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        height: 28px;
+        text-align: center;
+        &--ecart{
+            margin: 160px 0 0 0 ;
+        }
+        
+    }
+    &__lien:hover{
+        background-color: #ffffff;
+        transition: 1.2s;
+        transform: translateX(20px) rotate(60deg);
+        color: #121212;
+    }
+    
+}
