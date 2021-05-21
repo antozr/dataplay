@@ -5,10 +5,8 @@ console.log("hello");
 //-Chart.js https://www.chartjs.org/docs/latest/
 //-apexchart https://apexcharts.com/ 
 
-ScrollTrigger.create({
-    trigger: "#body",
-    start: "top top",
-    end: "bottom bottom",
-    pin:"box1"
-  });
+gsap.to("#box1", {
+  scrollTrigger: "#box1", x:500
+}); 
+
 
